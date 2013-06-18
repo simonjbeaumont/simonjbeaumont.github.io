@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <title>{{ page.title }}</title>
+  <meta name="author" content="{{ site.author }}" />
+  <meta name="description" content="Thoughts on technology, music and christianity by Si Beaumont. Si works at Citrix and is also congregation pastor at Cambridge Community Church (C3), UK." />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <link rel="alternate" type="application/rss+xml" href="http://feeds.feedburner.com/{{ site.feedburner }}" />
+  <link href='http://fonts.googleapis.com/css?family=Merriweather:300,300italic,400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/css/base.css" type="text/css" media="screen, projection" />
+  <link media="only screen and (max-device-width: 480px)" href="/css/mobile.css" type="text/css" rel="stylesheet" />
+  <link rel="stylesheet" href="/webfonts/ss-social.css" type="text/css" />
+  <link rel="stylesheet" href="/css/pygments.css" type="text/css" />
+  <link rel="apple-touch-icon-precomposed" href="/images/avatar.png" />
+</head>
+
+<body>
+  <div class="header">
+    <div class="container">
+      <section class="name">
+        {% assign title_words = site.name | split: ' ' %}
+        <a href="/">
+            {{ title_words[0] }}<b>{% for word in title_words offset:1 %}{{ word }}{% endfor %}</b>
+        </a>
+      </section>
+
+      <div class="sig"><span>by Si Beaumont</span></div>
+
+      <ul class="social">
+        <li><a href="https://twitter.com/{{ site.twitter }}" class="ss-icon ss-social-circle">twitter</a></li>
+        <li><a href="https://instagram.com/{{ site.instagram }}" class="ss-icon ss-social-circle">instagram</a></li>
+        <li><a href="http://feeds.feedburner.com/{{ site.feedburner }}" class="ss-icon ss-social-circle">rss</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <section class="container content">
+    {{ content }}
+  </section>
+
+</body>
+
+</html>

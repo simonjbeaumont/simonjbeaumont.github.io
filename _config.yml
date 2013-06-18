@@ -1,0 +1,18 @@
+markdown: rdiscount
+pygments: true
+safe: true
+permalink: /posts/:title
+rdiscount:
+  extensions: [smart]
+
+name: Skylight Symmetry
+author: Si Beaumont
+feedburner: skylightsymmetry
+twitter: simonjbeaumont
+instagram: simonjbeaumont
+github: simonjbeaumont
+
+catcolors:
+  software: 3a6476
+  music: 973d59
+  church: 69833f
