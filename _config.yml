@@ -1,0 +1,18 @@
+markdown: redcarpet
+comments: true
+highligher: pygments
+safe: true
+permalink: /posts/:title/
+redcarpet:
+  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
+
+url: http://simonjbeaumont.com
+baseurl:
+
+name: Skylight Symmetry
+author: Si Beaumont
+description: A front row seat to another brain enema. Si Beaumont's thoughts on software.
+keywords: beaumont, si beaumont, blog, software, cambridge, ocaml, citrix
+twitter: simonjbeaumont
+github: simonjbeaumont
+disqus: skylightsymmetry
