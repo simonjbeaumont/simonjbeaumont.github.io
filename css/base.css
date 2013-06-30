@@ -213,11 +213,15 @@ h1 {
     background-repeat: repeat-x;
     margin: 2em 3em;
   }
+  .comments {
+    margin: 75px -60px 25px -60px;
+    padding: 0;
+    text-align: center;
+  }
   .meta {
-    margin: 75px -30px 25px -30px;
+    margin: 25px -30px 25px -30px;
     padding: 60px 0;
     border-top: 1px solid #eee;
-    color: #eee;
     text-align: center;
   }
   .meta a {

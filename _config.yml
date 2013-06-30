@@ -1,4 +1,5 @@
 markdown: rdiscount
+comments: true
 pygments: true
 safe: true
 permalink: /posts/:title
@@ -11,6 +12,7 @@ feedburner: skylightsymmetry
 twitter: simonjbeaumont
 instagram: simonjbeaumont
 github: simonjbeaumont
+disqus: skylightsymmetry
 
 catcolors:
   software: 3a6476
