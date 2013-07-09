@@ -60,10 +60,10 @@ blockquote {
   }
 
   .name a {
-    font: 300 30px/30px 'Museo-300';
+    font: 300 30px/30px 'Museo';
   }
   .name b {
-    font: 700 30px/30px 'Museo-700';
+    font-weight: bold;
   }
 
   .sig {
