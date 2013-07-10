@@ -6,7 +6,7 @@ layout: default
     {% for post in site.posts %}
     {% assign cat = post.categories | first %}
     <li>
-        <span class="category" style="color:#{{ site.catcolors[cat] }}; opacity:0.4;">{{ post.categories | first }}</span>
+        <span class="category" style="color:#{{ site.catcolors[cat] }}; opacity:0.5;">{{ post.categories | first }}</span>
         <a href="{{ post.url }}">{{ post.title }}</a>
         <span class="date">{{ post.date | date: "%B %d, %Y" }}</span>
     </li>
