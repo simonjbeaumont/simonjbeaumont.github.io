@@ -28,8 +28,10 @@ vGPU and API intercept technologies such as Remote FX and vSGA which address
 less demanding 3D use cases like Aero effects and PowerPoint slide transitions.
 
 ## The architecture
+![XenServer's vGPU architecture](/images/2013-09-10-xenserver-vgpu/arch.png)
 
 ## Xapi's API and datamodel
+![Xapi's vGPU datamodel](/images/2013-09-10-xenserver-vgpu/datamodel.png)
 
 ## Driving the CLI
 
