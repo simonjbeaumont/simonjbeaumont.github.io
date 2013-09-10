@@ -27,7 +27,39 @@ professional graphics performance benefits differentiating it from software
 vGPU and API intercept technologies such as Remote FX and vSGA which address
 less demanding 3D use cases like Aero effects and PowerPoint slide transitions.
 
-## The architecture
+With NVIDIA's current offering the GRID K1 and K2 cards can be configured in
+the following ways:
+
+![Possible VGX configurations](/images/2013-09-10-xenserver-vgpu/vgx-configs.png)
+
+Currently each physical GPU (PGPU) only supports homogeneous vGPU
+configurations but different configurations are supported on different PGPUs
+across a singe K1/K2 card. This means that, with 2 K1 cards, we can run up to
+**64 VMs per host** with vGPU support which is fantastic for VDI workloads.
+
+## XenServer's vGPU architecture
+A new display type has been added to the device model:
+
+{% highlight udiff %}
+@@ -4519,6 +4522,7 @@ static const QEMUOption qemu_options[] =
+
+     /* Xen tree options: */
+     { "std-vga", 0, QEMU_OPTION_std_vga },
++    { "vgpu", 0, QEMU_OPTION_vgpu },
+     { "videoram", HAS_ARG, QEMU_OPTION_videoram },
+     { "d", HAS_ARG, QEMU_OPTION_domid }, /* deprecated; for xend compatibility */
+     { "domid", HAS_ARG, QEMU_OPTION_domid },
+{% endhighlight %}
+
+With this in place, `qemu` can now be started using a new option that will
+enable it to communicate with a new display emulator, `vgpu` to expose the
+graphics device to the guest. The `vgpu` binary is responsible for handling the
+VGX-capable GPU, and once it has been successfully passed through, the in-guest
+drivers can be installed in the same way as when it detects new hardware.
+
+The diagram below shows the relevant parts of the architecture for this
+project.
+
 ![XenServer's vGPU architecture](/images/2013-09-10-xenserver-vgpu/arch.png)
 
 ## Xapi's API and datamodel
