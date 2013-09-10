@@ -85,6 +85,10 @@ reservation of particular PGPUs for certain workloads. VGPUs are allocated on
 PGPUs within their GPU group in either a _depth-first_ or _breadth-first_
 manner, which is configurable on a per-group basis.
 
+<div class="aside">
+<b>TODO:</b> Maybe include some info on `ocaml-pci-db`.
+</div>
+
 ## Installation and usage
 <div class="aside">
 <b>TODO:</b> Need to wait for hotfix creation before completing this section
