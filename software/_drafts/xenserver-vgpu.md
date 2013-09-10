@@ -30,7 +30,7 @@ less demanding 3D use cases like Aero effects and PowerPoint slide transitions.
 With NVIDIA's current offering the GRID K1 and K2 cards can be configured in
 the following ways:
 
-![Possible VGX configurations](/images/2013-09-10-xenserver-vgpu/vgx-configs.png)
+![Possible VGX configurations](/images/xenserver-vgpu/vgx-configs.png)
 
 Currently each physical GPU (PGPU) only supports homogeneous vGPU
 configurations but different configurations are supported on different PGPUs
@@ -60,7 +60,7 @@ drivers can be installed in the same way as when it detects new hardware.
 The diagram below shows the relevant parts of the architecture for this
 project.
 
-![XenServer's vGPU architecture](/images/2013-09-10-xenserver-vgpu/arch.png)
+![XenServer's vGPU architecture](/images/xenserver-vgpu/arch.png)
 
 ## Xapi's API and datamodel
 
@@ -71,7 +71,7 @@ maintained the `GPU_group` concept as a pool-wide abstraction of `PGPUs`
 available for `VMs`; and we added **`VGPU_types`** which are configurations for
 `VGPU` objects.
 
-![Xapi's vGPU datamodel](/images/2013-09-10-xenserver-vgpu/datamodel.png)
+![Xapi's vGPU datamodel](/images/xenserver-vgpu/datamodel.png)
 
 <div class="aside">
 <b>Aside:</b> The term VGPU in Xapi's datamodel predates this feature and was
