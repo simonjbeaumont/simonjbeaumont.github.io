@@ -54,7 +54,7 @@ A new display type has been added to the device model:
 With this in place, `qemu` can now be started using a new option that will
 enable it to communicate with a new display emulator, `vgpu` to expose the
 graphics device to the guest. The `vgpu` binary is responsible for handling the
-VGX-capable GPU, and once it has been successfully passed through, the in-guest
+VGX-capable GPU and, once it has been successfully passed through, the in-guest
 drivers can be installed in the same way as when it detects new hardware.
 
 The diagram below shows the relevant parts of the architecture for this
@@ -67,23 +67,23 @@ project.
 A lot of work has gone into the toolstack to handle the creation and management
 of VMs with vGPUs. We revised our datamodel, introducing a semantic link
 between `VGPU` and `PGPU` objects to help with utilisation tracking; we
-maintained the `GPU_group` concept as a pool-wide abstraction of `PGPUs`
-available for `VMs`; and we added **`VGPU_types`** which are configurations for
+maintained the `GPU_group` concept as a pool-wide abstraction of PGPUs
+available for VMs; and we added **`VGPU_types`** which are configurations for
 `VGPU` objects.
 
 ![Xapi's vGPU datamodel](/images/xenserver-vgpu/datamodel.png)
 
 <div class="aside">
-<b>Aside:</b> The term VGPU in Xapi's datamodel predates this feature and was
-synonomous with GPU-passthrough. A VGPU is simply a display device assigned to
+<b>Aside:</b> The VGPU type in Xapi's datamodel predates this feature and was
+synonymous with GPU-passthrough. A VGPU is simply a display device assigned to
 a VM which may be a vGPU (this feature) or a whole GPU (a VGPU of type
-'whole').
+<i>passthrough</i>).
 </div>
 
-`VGPU_types` can be enabled/disabled on a per-`PGPU` basis allowing for
-reservation of particular PGPUs for certain workloads. `VGPUs` are allocated on
-`PGPUs` within their GPU group in either a _depth-first_ or _breadth-first_
-manner which is configurable on a per-GPU-group basis.
+**`VGPU_types`** can be enabled/disabled on a **per-PGPU basis** allowing for
+reservation of particular PGPUs for certain workloads. VGPUs are allocated on
+PGPUs within their GPU group in either a _depth-first_ or _breadth-first_
+manner, which is configurable on a per-group basis.
 
 ## Installation and usage
 <div class="aside">
