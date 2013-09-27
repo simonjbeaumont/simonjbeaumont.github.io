@@ -93,6 +93,35 @@ manner, which is configurable on a per-group basis.
 <div class="aside">
 <b>TODO:</b> Need to wait for hotfix creation before completing this section
 </div>
+The tech-preview is available as a hotfix for XenServer 6.2 and can be
+downloaded from [-XenServer.org-][4]. Once you have installed this and the
+necessary [-RPMs from NVIDIA-][5], then you can get yourself up and running
+using the XE command line interface.
+
+To create a VGPU of a given type you can use `vgpu-create`:
+{% highlight bash %}
+$ xe vgpu-create vm-uuid=... gpu-group-uuid=... vgpu-type-uuid=...
+{% endhighlight %}
+
+To see a list of VGPU types available for use on your XenServer, run the
+following command. Note, these will only be populated if you have installed the
+relevant NVIDIA RPMs and if there is hardware installed on that host supported
+each type. Using `params=all` will display more information such as the maximum
+number of heads supported by that VGPU type and which PGPUs have this type
+enabled and supported.
+{% highlight bash %}
+$ xe vgpu-type-list [params=all]
+{% endhighlight %}
+
+To access the new and relevant parameters on a PGPU (i.e.
+`supported_VGPU_types`, `enabled_VGPU_types`, `resident_VGPUs`) you can use
+`pgpu-param-get` with `param-name=supported-vgpu-types`
+`param-name=enabled-vgpu-types` and `param-name=resident-vgpus` respectively.
+Or, alternatively, you can use the following command to list all the parameters
+for the PGPU.  You can get the types supported or enabled for a given PGPU:
+{% highlight bash %}
+$ xe pgpu-list uuid=... params=all
+{% endhighlight %}
 
 ## The source (get involved)
 We're open source now, so why not get involved in the action. All the code for
