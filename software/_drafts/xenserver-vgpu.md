@@ -34,7 +34,7 @@ the following ways:
 
 Currently each physical GPU (PGPU) only supports homogeneous vGPU
 configurations but different configurations are supported on different PGPUs
-across a singe K1/K2 card. This means that, with 2 K1 cards, we can run up to
+across a single K1/K2 card. This means that, with 2 K1 cards, we can run up to
 **64 VMs per host** with vGPU support which is fantastic for VDI workloads.
 
 The more powerful K2 cards boast better performance, reducing the cost of
@@ -68,10 +68,10 @@ project.
 
 ![XenServer's vGPU architecture](/images/xenserver-vgpu/arch.png)
 
-## Xapi's API and datamodel
+## Xapi's API and data model
 
 A lot of work has gone into the toolstack to handle the creation and management
-of VMs with vGPUs. We revised our datamodel, introducing a semantic link
+of VMs with vGPUs. We revised our data model, introducing a semantic link
 between `VGPU` and `PGPU` objects to help with utilisation tracking; we
 maintained the `GPU_group` concept as a pool-wide abstraction of PGPUs
 available for VMs; and we added **`VGPU_types`** which are configurations for
@@ -80,7 +80,7 @@ available for VMs; and we added **`VGPU_types`** which are configurations for
 ![Xapi's vGPU datamodel](/images/xenserver-vgpu/datamodel.png)
 
 <div class="aside">
-<b>Aside:</b> The VGPU type in Xapi's datamodel predates this feature and was
+<b>Aside:</b> The VGPU type in Xapi's data model predates this feature and was
 synonymous with GPU-passthrough. A VGPU is simply a display device assigned to
 a VM which may be a vGPU (this feature) or a whole GPU (a VGPU of type
 <i>passthrough</i>).
@@ -110,7 +110,7 @@ $ xe vgpu-create vm-uuid=... gpu-group-uuid=... vgpu-type-uuid=...
 {% endhighlight %}
 
 To see a list of VGPU types available for use on your XenServer, run the
-following command. Note, these will only be populated if you have installed the
+following command. Note: these will only be populated if you have installed the
 relevant NVIDIA RPMs and if there is hardware installed on that host supported
 each type. Using `params=all` will display more information such as the maximum
 number of heads supported by that VGPU type and which PGPUs have this type
@@ -132,7 +132,7 @@ $ xe pgpu-list uuid=... params=all
 ## The source (get involved)
 We're open source now, so why not get involved in the action. All the code for
 the toolstack can be found on the [Xapi project's Github][2] with this project
-having it's own [feature branch][3].
+having its own [feature branch][3].
 
 The code for the display emulator that the device model interacts with is also
 open source and can be found [insert link to source here].
