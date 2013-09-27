@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Instrumenting XenServer for NVIDIA VGX (vGPU)
+title: Instrumenting XenServer for NVIDIA GRID (vGPU)
 ---
 
 Following the [recent announcement][1] of XenServer's upcoming virtual GPU
