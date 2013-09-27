@@ -37,6 +37,12 @@ configurations but different configurations are supported on different PGPUs
 across a singe K1/K2 card. This means that, with 2 K1 cards, we can run up to
 **64 VMs per host** with vGPU support which is fantastic for VDI workloads.
 
+The more powerful K2 cards boast better performance, reducing the cost of
+GPU-enabled virtualisation for users of more demaning 3D software. Due to
+Citrix's close partnership with **NVIDIA**, **IBM** and **PTC**, the XenServer
+platform provides powerful new functionality for users of graphic design and
+[CAD applications][4].
+
 ## XenServer's vGPU architecture
 A new display type has been added to the device model:
 
@@ -139,3 +145,4 @@ open source and can be found [insert link to source here].
 [1]: http://blogs.citrix.com/2013/08/26/preparing-for-true-hardware-gpu-sharing-for-vdi-with-xenserver-xendesktop-and-nvidia-grid/
 [2]: http://github.com/xapi-project
 [3]: http://github.com/xapi-project/xen-api/tree/pr-1061
+[4]: http://investor.ptc.com/releasedetail.cfm?ReleaseID=770282
