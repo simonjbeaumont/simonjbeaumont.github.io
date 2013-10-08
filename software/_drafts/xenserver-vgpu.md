@@ -130,14 +130,6 @@ We're open source now, so why not get involved in the action. All the code for
 the toolstack can be found on the [Xapi project's Github][2] with this project
 having its own [feature branch][3].
 
-The code for the display emulator that the device model interacts with is also
-open source and can be found [insert link to source here].
-
-<div class="aside">
-<b>TODO:</b> Find out where the demu source is!
-</div>
-
-
 [1]: http://blogs.citrix.com/2013/08/26/preparing-for-true-hardware-gpu-sharing-for-vdi-with-xenserver-xendesktop-and-nvidia-grid/
 [2]: http://github.com/xapi-project
 [3]: http://github.com/xapi-project/xen-api/tree/pr-1061
