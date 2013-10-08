@@ -96,9 +96,9 @@ manner, which is configurable on a per-group basis.
 <b>TODO:</b> Need to wait for hotfix creation before completing this section
 </div>
 The tech-preview is available as a hotfix for XenServer 6.2 and can be
-downloaded from [-XenServer.org-][4]. Once you have installed this and the
-necessary [-RPMs from NVIDIA-][5], then you can get yourself up and running
-using the XE command line interface.
+downloaded from [vGPU Tech-Preview page][5]. Once you have installed this and
+the necessary RPMs from NVIDIA, then you can get yourself up and running using
+the XE command line interface.
 
 To create a VGPU of a given type you can use `vgpu-create`:
 {% highlight bash %}
@@ -142,3 +142,4 @@ open source and can be found [insert link to source here].
 [2]: http://github.com/xapi-project
 [3]: http://github.com/xapi-project/xen-api/tree/pr-1061
 [4]: http://investor.ptc.com/releasedetail.cfm?ReleaseID=770282
+[5]: http://www.citrix.com/go/vgpu
