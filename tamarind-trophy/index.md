@@ -13,7 +13,7 @@ and a **£30 Amazon Gift Voucher**.
 ## Wallchart
 Click image to see full size...
 
-[![wallchart](tt-last-32.png)](tt-last-32.pdf)
+[![wallchart](tt-last-16.png)](tt-last-16.pdf)
 
 ## Rules
 * The cup will start on **Gameweek 20** (Jan 1st);
