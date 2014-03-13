@@ -10,10 +10,14 @@ the prestigious, 5-round knock-out cup for the Tamarind Trophy.
 The winning team will received an inscribed, much coveted,  **Tamarind Trophy**
 and a **£30 Amazon Gift Voucher**.
 
+## We have a winner!
+Congratulations to **Sam Buxton** and his team **How hard? Gerraarrrd** for
+their impressive and relentless climb to the top!
+
 ## Wallchart
 Click image to see full size...
 
-[![wallchart](tt-last-4.png)](tt-last-4.pdf)
+[![wallchart](tt-winner.png)](tt-winner.pdf)
 
 ## Rules
 * The cup will start on **Gameweek 20** (Jan 1st);
