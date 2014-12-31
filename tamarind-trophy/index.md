@@ -3,21 +3,19 @@ layout: default
 title: Official Tamarind Trophy Wallchart
 ---
 
-# C3 Fantasy Football---Tamarind Trophy 2013/14
-The top 32 teams as of gameweek 18 in the C3 FFL league have been entered into
-the prestigious, 5-round knock-out cup for the Tamarind Trophy.
+# C3 Fantasy Football---Tamarind Trophy 2014/15
+This year there are 55 teams in the league. Therefore the cup draw will be as
+follows so as to include all teams. The top 9 teams after gameweek 18 will be
+granted free passage into the second round equally spaced on the road to the
+final. The remaining 46 teams will be randomly entered into the first round.
 
 The winning team will received an inscribed, much coveted,  **Tamarind Trophy**
 and a **£30 Amazon Gift Voucher**.
 
-## We have a winner!
-Congratulations to **Sam Buxton** and his team **How hard? Gerraarrrd** for
-their impressive and relentless climb to the top!
-
 ## Wallchart
 Click image to see full size...
 
-[![wallchart](tt-winner.png)](tt-winner.pdf)
+[![wallchart](tt-last-55.png)](tt-last-55.pdf)
 
 ## Rules
 * The cup will start on **Gameweek 20** (Jan 1st);
@@ -29,3 +27,7 @@ Click image to see full size...
 * The team with the **highest round score** will progress to the next round;
 * In the case of a tie, the round will be decided on the sum of the points
   scored by the **benched players** across both gameweeks.
+
+## Previous winners
+* 2013-14: Sam Buxton with _How hard? Gerraarrrd_
+
