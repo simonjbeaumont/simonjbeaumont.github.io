@@ -10,12 +10,11 @@ granted free passage into the second round equally spaced on the road to the
 final. The remaining 46 teams will be randomly entered into the first round.
 
 The winning team will received an inscribed, much coveted,  **Tamarind Trophy**
-and a **£30 Amazon Gift Voucher**.
 
 ## Wallchart
 Click image to see full size...
 
-[![wallchart](tt-last-8.png)](tt-last-8.pdf)
+[![wallchart](tt-last-2.png)](tt-last-2.pdf)
 
 ## Rules
 * The cup will start on **Gameweek 20** (Jan 1st);
