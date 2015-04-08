@@ -1,10 +1,11 @@
-markdown: rdiscount
+markdown: redcarpet
 comments: true
 pygments: true
+highligher: pygments
 safe: true
 permalink: /posts/:title
-rdiscount:
-  extensions: [smart]
+redcarpet:
+  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
 
 name: Skylight Symmetry
 author: Si Beaumont

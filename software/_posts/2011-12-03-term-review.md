@@ -31,13 +31,15 @@ have been set at interview. I honestly question how they can tell how fit you
 are for a role based on really anal puzzles such as the following:
 
 > Observe the following failed attempt to print Hello 20 times:
-{% highlight c linenos %}
+
+```c
 int n = 20;
 int i;
 for (i = 0; i < n; i--) {
     printf("Hello");
 }
-{% endhighlight %}
+```
+
 > The above code can be modified to produce the required output by changing a
 > single character (adding, removing or substituting). Find _three different_
 > ways to do this.

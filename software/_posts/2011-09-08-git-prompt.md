@@ -15,7 +15,7 @@ repository you're on (if applicable) and give a dirty flag as well...
 
 It involves a couple of functions in your `.bashrc` and here they are:
 
-{% highlight bash %}
+```bash
 git_dirty_flag() {
   git status 2> /dev/null | grep -c : | awk '{if ($1 > 0) print "*"}'
 }
@@ -23,7 +23,7 @@ git_dirty_flag() {
 parse_git_branch() {
   git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ \1/'
 }
-{% endhighlight %}
+```
 
 Just call these within your PS1. I like to know if the branch I'm working on is
 clean or not so I get it to append the branch name with a `*` if there are

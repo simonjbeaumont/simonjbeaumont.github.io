@@ -46,7 +46,7 @@ platform provides powerful new functionality for users of graphic design and
 ## XenServer's vGPU architecture
 A new display type has been added to the device model:
 
-{% highlight udiff %}
+```udiff
 @@ -4519,6 +4522,7 @@ static const QEMUOption qemu_options[] =
 
      /* Xen tree options: */
@@ -55,7 +55,7 @@ A new display type has been added to the device model:
      { "videoram", HAS_ARG, QEMU_OPTION_videoram },
      { "d", HAS_ARG, QEMU_OPTION_domid }, /* deprecated; for xend compatibility */
      { "domid", HAS_ARG, QEMU_OPTION_domid },
-{% endhighlight %}
+```
 
 With this in place, `qemu` can now be started using a new option that will
 enable it to communicate with a new display emulator, `vgpu` to expose the
@@ -101,9 +101,10 @@ the necessary RPMs from NVIDIA, then you can get yourself up and running using
 the XE command line interface.
 
 To create a VGPU of a given type you can use `vgpu-create`:
-{% highlight bash %}
+
+```bash
 $ xe vgpu-create vm-uuid=... gpu-group-uuid=... vgpu-type-uuid=...
-{% endhighlight %}
+```
 
 To see a list of VGPU types available for use on your XenServer, run the
 following command. Note: these will only be populated if you have installed the
@@ -111,9 +112,10 @@ relevant NVIDIA RPMs and if there is hardware installed on that host supported
 each type. Using `params=all` will display more information such as the maximum
 number of heads supported by that VGPU type and which PGPUs have this type
 enabled and supported.
-{% highlight bash %}
+
+```bash
 $ xe vgpu-type-list [params=all]
-{% endhighlight %}
+```
 
 To access the new and relevant parameters on a PGPU (i.e.
 `supported_VGPU_types`, `enabled_VGPU_types`, `resident_VGPUs`) you can use
@@ -121,9 +123,10 @@ To access the new and relevant parameters on a PGPU (i.e.
 `param-name=enabled-vgpu-types` and `param-name=resident-vgpus` respectively.
 Or, alternatively, you can use the following command to list all the parameters
 for the PGPU.  You can get the types supported or enabled for a given PGPU:
-{% highlight bash %}
+
+```bash
 $ xe pgpu-list uuid=... params=all
-{% endhighlight %}
+```
 
 ## The source (get involved)
 We're open source now, so why not get involved in the action. All the code for
