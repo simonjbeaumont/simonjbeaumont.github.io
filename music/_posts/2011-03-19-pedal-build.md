@@ -1,6 +1,6 @@
 ---
 layout: post
-title: the_n00bScreamer — The birth of a DIY FX pedal
+title: The birth of a DIY guitar FX pedal
 tags: guitar pedal project
 ---
 
