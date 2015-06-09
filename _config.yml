@@ -1,6 +1,5 @@
 markdown: redcarpet
 comments: true
-pygments: true
 highligher: pygments
 safe: true
 permalink: /posts/:title
