@@ -50,7 +50,7 @@ blockquote {
 }
   .header a, .header b {
     color: #444;
-    text-transform: uppercase;
+    text-transform: lowercase;
     text-decoration: none;
     transition: color 0.25s ease-in;
     -webkit-transition: color 0.25s ease-in;
