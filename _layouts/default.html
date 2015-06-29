@@ -48,6 +48,10 @@
     </div>
   </div>
 
+  {% if page.hero != null %}
+  <div class="hero" style="background-image: url({{page.hero}})"/></div>
+  {% endif %}
+
   <section class="container content">
     {{ content }}
   </section>
