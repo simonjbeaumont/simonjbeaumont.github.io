@@ -29,15 +29,17 @@
 
 <body>
   <div class="header">
+    {% if page.hero != null %}
+    <div class="hero" style="background-image: url({{page.hero}})" data-0="background-position:50% 70%;" data-183="background-position:50% 90%;"/>
+    {% endif %}
     <div class="container">
       <section class="name">
         {% assign title_words = site.name | split: ' ' %}
         <a href="/">
             {{ title_words[0] }}<b>{% for word in title_words offset:1 %}{{ word }}{% endfor %}</b>
         </a>
-      </section>
-
       <div class="sig"><span>by Si Beaumont</span></div>
+      </section>
 
       <ul class="social">
         <li><a href="https://twitter.com/{{ site.twitter }}" class="ss-icon ss-social-circle">twitter</a></li>
@@ -45,17 +47,16 @@
         <li><a href="https://github.com/{{ site.github }}" class="ss-icon ss-social-circle">octocat</a></li>
         <li><a href="http://feeds.feedburner.com/{{ site.feedburner }}" class="ss-icon ss-social-circle">rss</a></li>
       </ul>
-    </div>
+    </div></div>
   </div>
 
-  {% if page.hero != null %}
-  <div class="hero" style="background-image: url({{page.hero}})"/></div>
-  {% endif %}
 
   <section class="container content">
     {{ content }}
   </section>
 
+  <script type="text/javascript" src="js/skrollr.min.js"></script>
+  <script type="text/javascript">skrollr.init();</script>
 </body>
 
 </html>

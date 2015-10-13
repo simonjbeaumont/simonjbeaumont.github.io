@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Some extra bells for Mutt's brilliant whistles
+hero: http://zachholman.com/images/posts/basement-header.jpg
 ---
 
 I lasted longer than I would expect, but my compliance budget finally ran out
