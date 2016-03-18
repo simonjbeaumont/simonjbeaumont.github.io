@@ -156,6 +156,11 @@
         <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}</p>
       </div>
       <div class="credits">
+        {% if page.image.credit %}
+        <p>
+        <span class="glyphicon glyphicon-picture"></span> Feature image by <a href="{{ page.image.credit_link }}">{{ page.image.credit }}</a>
+        </p>
+        {% endif %}
         <p>
           <span class="glyphicon glyphicon-heart"></span> Powered by <a href="https://jekyllrb.com">Jekyll</a>
         </p>
