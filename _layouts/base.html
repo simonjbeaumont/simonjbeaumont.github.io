@@ -6,23 +6,6 @@
   <meta http-equiv='X-UA-Compatible' content='IE=edge'/>
   <meta name="HandheldFriendly" content="true"/>
 
-  {% comment %}
-  MUST HAVE:
-  TODO: squash description and summary
-  TODO: handle keywords and tags
-  TODO: Make keywords a YAML list in post files
-  TODO: Get all posts over and fixup YAML
-  TODO: Get images for all posts we care about
-  BACKLOG:
-  TODO: check skip to content link works
-  TODO: Search
-  TODO: Archive page
-  TODO: move scripts to end of body?
-  TODO: Posts by categories page
-  TODO: Fixup navbar to include class="active" for active page
-  TODO: body class blog-design-list is causing weird navbar non-stick
-  {% endcomment %}
-
   <title>{% if page.title %}{{ page.title }} &vert; {% endif %}{{ site.title }}</title>
 
   {% capture h_title %}
@@ -109,7 +92,7 @@
   {% else %} UNKNOWN
   {% endcase %}
 {% endcapture %}
-<body class="{{ body_class }} navbar-position-right header-position-left custom-header custom-background" itemscope itemtype="http://schema.org/WebPage">
+<body class="{{ body_class }} layout-{{ page.layout }} navbar-position-right header-position-left custom-header custom-background" itemscope itemtype="http://schema.org/WebPage">
   <a class="skip-link screen-reader-text sr-only sr-only-focusable" href="#content" title="Skip to content">
     Skip to content
   </a>
