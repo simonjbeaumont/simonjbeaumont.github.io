@@ -88,6 +88,7 @@
 {% capture body_class %}
   {% case page.layout %}
   {% when 'home' %} blog blog-design-list
+  {% when 'base' %} blog blog-design-list
   {% when 'post' %} single
   {% else %} UNKNOWN
   {% endcase %}
