@@ -2,17 +2,14 @@
 layout: post
 title: Wrangling Grafana and InfluxDB into a Docker image
 keywords: docker,grafana,influxdb,nginx,dashboard,container,cron,dashboard
-hero: /images/docker-dashboard/cattle.jpg
+image:
+  path: /images/docker-dashboard/cattle.jpg
+  credit: Matt Northam
+  credit_link: https://www.flickr.com/photos/scpgt/3547880567
 ---
 
-<div class="when">
-Shoutouts on Twitter:
-  <blockquote class="twitter-tweet" data-cards="hidden" data-lang="en"><p lang="en" dir="ltr">Wrangling <a href="https://twitter.com/grafana">@Grafana</a> and <a href="https://twitter.com/InfluxDB">@InfluxDB</a> into a <a href="https://twitter.com/docker">@Docker</a> image by <a href="https://twitter.com/simonjbeaumont">@simonjbeaumont</a>: <a href="https://t.co/1bp4OSJ0jP">https://t.co/1bp4OSJ0jP</a> <a href="https://t.co/jm18JC5FeU">pic.twitter.com/jm18JC5FeU</a></p>&mdash; Docker (@docker) <a href="https://twitter.com/docker/status/700244657700261888">February 18, 2016</a></blockquote>
-<blockquote class="twitter-tweet" data-cards="hidden" data-lang="en"><p lang="en" dir="ltr">Check out how to build <a href="https://twitter.com/docker">@docker</a> images for Grafana &amp; InfluxDB over on <a href="https://twitter.com/simonjbeaumont">@simonjbeaumont</a>&#39;s blog: <a href="https://t.co/VzDQhEhnTM">https://t.co/VzDQhEhnTM</a> <a href="https://t.co/xMlwtTis7H">pic.twitter.com/xMlwtTis7H</a></p>&mdash; InfluxData (@InfluxDB) <a href="https://twitter.com/InfluxDB/status/700756754829672448">February 19, 2016</a></blockquote>
-  <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-</div>
-
-<small><small>Photo credit: [Matt Northam][12]</small></small>
+<blockquote class="twitter-tweet" data-cards="hidden" data-lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/docker/status/700244657700261888"></a></p></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 It's been a few months now, and our information radiator for our team is
 humming along nicely.
@@ -223,6 +220,8 @@ pull` and get going. For the time being we're driving this all from [a
 Makefile][10], mainly for the benefit of bootstrapping and protecting the data
 volume container by ensuring only one container runs with the volumes from the
 data container at any one time.
+
+<blockquote class="twitter-tweet" data-cards="hidden" data-lang="en"><p lang="en" dir="ltr">Check out how to build <a href="https://twitter.com/docker">@docker</a> images for Grafana &amp; InfluxDB over on <a href="https://twitter.com/simonjbeaumont">@simonjbeaumont</a>&#39;s blog: <a href="https://t.co/VzDQhEhnTM">https://t.co/VzDQhEhnTM</a> <a href="https://t.co/xMlwtTis7H">pic.twitter.com/xMlwtTis7H</a></p>&mdash; InfluxData (@InfluxDB) <a href="https://twitter.com/InfluxDB/status/700756754829672448">February 19, 2016</a></blockquote>
 
 [1]: /posts/information-radiation
 [2]: http://www.theregister.co.uk/2013/03/18/servers_pets_or_cattle_cern

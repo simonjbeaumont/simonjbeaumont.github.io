@@ -1,9 +1,8 @@
 ---
 layout: post
 title: Penultimate term review
-tags: compsci student life
+tags: [compsci, student life]
 ---
-
 
 Well thus ends my final Michaelmas term. I think that in future years I may
 come to miss October's sudden onslaught of _Freshers' Flu_ but not much else.

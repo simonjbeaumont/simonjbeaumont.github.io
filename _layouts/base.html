@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset='UTF-8'/>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no'/>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'/>
+  <meta name="HandheldFriendly" content="true"/>
+
+  {% comment %}
+  MUST HAVE:
+  TODO: squash description and summary
+  TODO: handle keywords and tags
+  TODO: Make keywords a YAML list in post files
+  TODO: Get all posts over and fixup YAML
+  TODO: Get images for all posts we care about
+  BACKLOG:
+  TODO: check skip to content link works
+  TODO: Search
+  TODO: Archive page
+  TODO: move scripts to end of body?
+  TODO: Posts by categories page
+  TODO: Fixup navbar to include class="active" for active page
+  TODO: body class blog-design-list is causing weird navbar non-stick
+  {% endcomment %}
+
+  <title>{% if page.title %}{{ page.title }} &vert; {% endif %}{{ site.title }}</title>
+
+  {% capture h_title %}
+    {% if page.title %} {{ page.title }}
+    {% else %} {{ site.title }}
+    {% endif %}
+  {% endcapture %}
+  {% capture h_description %}
+    {% if page.description %}{{ page.description }}
+    {% else %} {{ site.description }}
+    {% endif %}
+  {% endcapture %}
+  {% capture h_keywords %}
+    {% if page.keywords %}{{ page.keywords | join: ', '}}
+    {% else %} {{ site.keywords | join: ', ' }}
+    {% endif %}
+  {% endcapture %}
+  {% capture h_type %}
+    {% if page.layout == 'post' %} article
+    {% else %} website
+    {% endif %}
+  {% endcapture %}
+  {% assign h_url = page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url %}
+  {% assign h_img_url = page.image.path | strip | prepend: site.baseurl | prepend: site.url %}
+
+  <meta name="description" content="{{ h_description | strip}}">
+  <meta name="keywords" content="{{ h_keywords | strip }}">
+  <meta name="author" content="{{ site.author.name | strip }}">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="{{ h_type | strip }}">
+  <meta property="og:title" content="{{ h_title | strip }}">
+  <meta property="og:description" content="{{ h_description | strip }}">
+  <meta property="og:url" content="{{ h_url | strip }}">
+  <meta property="og:author" content="{{ site.author.name | strip }}">
+  <meta property="og:site_name" content="{{ site.title | strip }}"/>
+  <meta property="og:image" content="{{ h_img_url }}"/>
+  <meta property="og:locale" content="en_GB">
+
+  <!-- Twitter Cards -->
+  {% if site.owner.twitter %}
+    {% if h_img_url %}
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="{{ h_img_url }}">
+    {% else %}
+    <meta name="twitter:card" content="summary">
+    {% endif %}
+    <meta name="twitter:title" content="{{ h_title }}">
+    <meta name="twitter:description" content="{{ h_description }}">
+    <meta name="twitter:creator" content="@{{ site.author.twitter }}">
+  {% endif %}
+
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }} &raquo; Feed" href="feed.xml"/>
+  <link rel='stylesheet' id='enlightenment-web-fonts-css' href='http://fonts.googleapis.com/css?family=PT+Serif:400,italic,700,700italic%7CMontserrat:700%7CNeuton:400,italic,700italic,800%7CPlayfair+Display&#038;subset=latin' type='text/css' media='all'/>
+  <link rel='stylesheet' href='https://code.cdn.mozilla.net/fonts/fira.css' type='text/css' media='all' />
+  <link rel="stylesheet" href="/assets/fonts/ss-social/ss-social.css" type="text/css" media='all' />
+  <link rel='stylesheet' href='/assets/css/bootstrap.min.css' type='text/css' media='all'/>
+  <link rel='stylesheet' href='/css/pygments.css' type='text/css' media='all'/>
+  <link rel='stylesheet' href='/css/style.css' type='text/css' media='all'/>
+  <style id='enlightenment-theme-stylesheet-inline-css' type='text/css'>html{font-size:17px}h1,h2,h3,h4,h5,h6,.navbar-brand{font-family:Montserrat,sans-serif}.site-description,.entry-content,.entry-utility,.archive-description,.blog.blog-design-blog .entry-summary,.single .entry-summary,.page .page .entry-summary,.blog.blog-design-list .entry-summary,.archive .entry-summary,.search .entry-summary,.error404 .entry-summary,.entry-content,.more-link,.comment-content,#infscr-loading{font-family:PT Serif,serif}</style>
+  <style type="text/css" id="custom-background-css">.custom-background,.custom-background .entry,.custom-background.navbar-position-left.archive .site-content,.custom-background.navbar-position-left.search .site-content,.custom-background.navbar-position-left.error404 .site-content,.custom-background.navbar-position-left.header-position-right.blog.blog-design-list .site-content,.custom-background.navbar-position-left.header-position-right.archive .site-content,.custom-background.navbar-position-left.header-position-right.search .site-content,.custom-background.navbar-position-left.header-position-right.error404 .site-content,.custom-background.navbar-position-left.header-position-right.blog.blog-design-blog .entry,.custom-background.navbar-position-left.header-position-right.single .entry,.custom-background.navbar-position-left.header-position-right.page .page .entry,.custom-background.navbar-position-left.blog.blog-design-blog .entry,.custom-background.navbar-position-left.single .entry,.custom-background.navbar-position-left.page .page .entry{background-color:#ffffff;}.custom-background.blog.blog-design-list .entry{background-image:none;}@media (min-width: 992px) {.more-link::after{background:linear-gradient(rgba(255,255,255,0),rgba(255,255,255,1) 177px) no-repeat;}}</style>
+
+  <link rel='stylesheet' href='/assets/css/fluidbox.css' type='text/css' media='all'/>
+  <!--[if lt IE 9]>
+  <script src='/assets/js/html5shiv.min.js'></script>
+  <script src='/assets/js/respond.min.js'></script>
+  <![endif]-->
+  <script type='text/javascript' src='/assets/js/jquery/jquery.js%3Fver=1.11.3'></script>
+  <script type='text/javascript' src='/assets/js/jquery/jquery-migrate.min.js%3Fver=1.2.1'></script>
+  <style>.page-header{background-image:url({{ page.image.path }});}</style>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-74102789-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+</head>
+{% capture body_class %}
+  {% case page.layout %}
+  {% when 'home' %} blog blog-design-list
+  {% when 'post' %} single
+  {% else %} UNKNOWN
+  {% endcase %}
+{% endcapture %}
+<body class="{{ body_class }} navbar-position-right header-position-left custom-header custom-background" itemscope itemtype="http://schema.org/WebPage">
+  <a class="skip-link screen-reader-text sr-only sr-only-focusable" href="#content" title="Skip to content">
+    Skip to content
+  </a>
+  <div id="page" class="site">
+  <header id="masthead" class="site-header navbar navbar-static-top navbar-inverse" role="banner">
+  <div class="container-fluid">
+    <div class="branding navbar-header" itemscope itemtype="http://schema.org/WPHeader">
+      <button class="navicon navbar-toggle navbar-toggle" id="navbar-toggle" type="button">
+        <span class="navbar-toggle-text screen-reader-text sr-only">Menu</span><span class="glyphicon glyphicon-th"></span>
+        <span class="glyphicon glyphicon-chevron-left"></span>
+      </button>
+      <a class="navbar-brand" href="/" rel="home">{{ site.title }}</a>
+      <div class="site-description" id="site-description" itemprop="description">
+        {{ site.description }}
+      </div>
+    </div>
+    <nav id="site-navigation" class="menu-container" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <h2 class="screen-reader-text sr-only">Menu</h2>
+        <ul id="menu-primary-menu" class="menu nav navbar-nav navbar-rightmenu nav navbar-nav">
+          <li id="menu-item-home" class="menu-item menu-item-has-icon" itemprop="name"><a href="/" itemprop="url"><span class="glyphicon glyphicon-home"></span> Home<br/><span class="menu-item-description">My Blog’s Home Page</span></a></li>
+          <li id="menu-item-author" class="menu-item menu-item-has-icon" itemprop="name"><a href="/about" itemprop="url"><span class="glyphicon glyphicon-user"></span> Author<br/><span class="menu-item-description">About {{ site.author.name }}</span></a></li>
+          {% comment %}
+          <li id="menu-item-categories" class="menu-item menu-item-has-icon" itemprop="name"><a href="POSTS BY CATEGORY" itemprop="url"><span class="glyphicon glyphicon-tags"></span> Category<br/><span class="menu-item-description">Posts by category</span></a></li>
+          {% endcomment %}
+          <li id="menu-item-featured" class="menu-item menu-item-has-icon" itemprop="name"><a href="/posts/{{ site.featured_post }}" itemprop="url"><span class="glyphicon glyphicon-pushpin"></span> Pinned<br/><span class="menu-item-description">Featured post</span></a></li>
+          <li id="menu-item-github" class="menu-item menu-item-has-icon" itemprop="name"><a href="https://github.com/{{ site.author.github }}" itemprop="url"><span class="glyphicon ss-icon ss-social-circle">octocat</span> Github<br/><span class="menu-item-description">Stuff I hack on</span></a></li>
+          <li id="menu-item-twitter" class="menu-item menu-item-has-icon" itemprop="name"><a href="https://twitter.com/{{ site.author.twitter }}" itemprop="url"><span class="glyphicon ss-icon ss-social">twitter</span> Twitter<br/><span class="menu-item-description">Mumblings</span></a></li>
+          {% comment %}
+          <li id="menu-item-projects" class="menu-item menu-item-has-icon" itemprop="name"><a href="PROJECTS" itemprop="url"><span class="glyphicon glyphicon-file"></span> Projects<br/><span class="menu-item-description">Recent codeA static Page</span></a></li>
+          {% endcomment %}
+      </ul>
+    </nav>
+    {% comment %}
+    <div id="secondary" class="widget-area sidebar sidebar-primary" role="complementary" itemscope itemtype="http://schema.org/WPSideBar">
+      <aside id="search-2" class="widget widget_search">
+        <form class="form-search" id="searchform" action="index.html" role="search">
+          <label for="s" class="screen-reader-text sr-only">Search for:</label>
+          <div class="input-group">
+            <span class="input-group-btn">
+              <button class="btn btn-default" id="searchsubmit" type="submit">
+                <span class="glyphicon glyphicon-search"></span>
+              </button>
+            </span>
+            <input name="s" class="search-query form-control" id="s" type="text" value="" placeholder="Type to search &hellip;"/>
+          </div>
+        </form>
+      </aside>
+    </div>
+    {% endcomment %}
+  </div>
+  </header>
+  <div id="content" class="site-content">
+    <main id="primary" class="content-area hfeed">
+      {{ content }}
+    </main>
+  </div>
+  <footer id="colophon" class="site-footer" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
+    <div class="container-fluid">
+      <div class="copyright">
+        <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}</p>
+      </div>
+      <div class="credits">
+        <p>
+          <span class="glyphicon glyphicon-heart"></span> Powered by <a href="https://jekyllrb.com">Jekyll</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+  </div>
+  <div class="navbar-hide"></div>
+  <script type='text/javascript' src='/assets/js/bootstrap.min.js'></script>
+  <script type='text/javascript'>
+  /* <![CDATA[ */
+  var enlightenment_fluidbox_args = {"selector":"a[href$=\".jpg\"], a[href$=\".jpeg\"], a[href$=\".png\"], a[href$=\".gif\"]","maxWidth":"100%","maxHeight":"100%"};
+  /* ]]> */
+  </script>
+  <script type='text/javascript' src='/assets/js/jquery.fluidbox.min.js'></script>
+  <script type='text/javascript' src='/assets/js/call.js'></script>
+  <script type='text/javascript' src='/js/sticky-kit.min.js'></script>
+  <script type='text/javascript' src='/js/jquery.touchSwipe.min.js'></script>
+  <script type='text/javascript' src='/js/master.js'></script>
+</body>
+</html>

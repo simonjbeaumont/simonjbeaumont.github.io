@@ -1,11 +1,13 @@
 ---
 layout: post
 title: Type-safe C bindings using ocaml-ctypes and stub generation
-keywords: ocaml,ocaml-ctypes,bindings,ffi,type-safe,flock,ocaml-flock
+keywords: [ocaml, ocaml-ctypes, bindings, ffi, type-safe, flock, ocaml-flock]
 hero: /images/ctypes/mines.jpg
+image:
+  path: /images/ctypes/mines.jpg
+  credit: Kenners
+  credit_link: https://www.flickr.com/photos/kenrickturner/11083895853
 ---
-
-<small><small>Photo credit: [Kenners][2]</small></small>
 
 There's sometimes you just don't want to reinvent the wheel. Working day-to-day
 in OCaml, you start to enjoy the fruits of a statically, strongly typed
@@ -261,7 +263,6 @@ confidence!
 
 [0]: http://caml.inria.fr/pub/docs/manual-ocaml-4.00/manual033.html
 [1]: https://github.com/ocamllabs/ocaml-ctypes
-[2]: https://www.flickr.com/photos/kenrickturner/11083895853
 [3]: http://linux.die.net/man/2/flock
 [4]: https://github.com/janestreet/core/blob/master/src/unix_stubs.c#L489-L534
 [5]: https://github.com/simonjbeaumont/ocaml-flock

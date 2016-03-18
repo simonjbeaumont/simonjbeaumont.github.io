@@ -1,6 +1,7 @@
 ---
 title: Tiny C program to compute largest known prime
 layout: post
+archive: true
 ---
 Having recently discovered **the awesome** [in-browser Javascript Linux
 kernel](http://bellard.org/jslinux/), I looked a bit further into the

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The birth of a DIY guitar FX pedal
-tags: guitar pedal project
+tags: [guitar, FX pedal, project]
 ---
 
 ![](http://cl.ly/image/0L1L2R3y310c/content)
@@ -19,8 +19,8 @@ href="http://www.youtube.com/watch?v=37RfgSdn53w">this youtube review</a> by <a
 target="_blank" href="http://www.gearmanndude.com/">Gearmanndude</a> (is it
 Jack Black? --- who knows?!)...
 
-For those of you nerds who don't care too much for sound but can't resist a
-good ol' geek-fest and want to buy one and have a crack at it check the <a
+For those of you who don't care too much for sound but can't resist a
+good ol' DIY project and want to buy one and have a crack at it check the <a
 target="_blank" href="http://www.buildyourownclone.com/overdrive2.html">BYOC
 website</a>.
 

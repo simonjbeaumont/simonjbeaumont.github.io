@@ -2,6 +2,7 @@
 layout: post
 title: Hash maps and primality—when & why?
 tags: compsci puzzle interview
+archive: true
 ---
 
 Recently I was posed an interesting question during an interview for a graduate software engineering position. It would be unfair to say which company this was and so I will cryptic-crossword-clue-ify the name by saying _finished novel before resounding characteristic of my stride_. Anyway(!), I thought I'd share my thoughts on a particular (perhaps bogus) question from that experience.

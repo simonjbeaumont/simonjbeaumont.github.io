@@ -1,44 +1,106 @@
 ---
-layout: default
+layout: base
 ---
+<article id="post" class="post hentry" itemscope itemprop="blogPost" itemtype="http://schema.org/BlogPosting">
+  <header class="entry-header" style="background-image:url({{ page.image.path }});">
+    <div class="entry-header-inner">
+      <h1 class="entry-title" itemprop="headline">{{ page.title }}</h1>
+      <div class="entry-summary" itemprop="text">
+        {% if page.summary %}
+        <p>{{ page.summary }}</p>
+        {% else %}
+        <p>{{ page.content | strip_html | truncatewords:25 }}</p>
+        {% endif %}
+      </div>
+      <div class="entry-meta">
+        <span class="entry-date">
+          <time class="published updated" datetime="{{ page.date | date_to_xmlschema }}">
+            {{ page.date | date: "%B %d, %Y" }}
+          </time>
+        </span>
+        by <span class="entry-author">
+          <span class="author vcard">
+            <a class="url fn n" href="/about">
+              {{ site.author.name }}
+            </a>
+          </span>
+        </span>
+        {% if page.image.credit %}
+        <p>
+          <small>
+            <a class="url fn n" href="{{ page.image.credit_link }}">
+              photo credit: <span class="entry-author">
+                <span class="author vcard">
+                    {{ page.image.credit }}
+                </span>
+              </span>
+            </a>
+          </small>
+        </p>
+        {% endif %}
+      </div>
+    </div>
+  </header>
+  <div class="entry">
+    <div class="entry-inner">
+      <div class="entry-content" itemprop="text">
+        {{ content }}
+      </div>
+      <footer class="entry-meta entry-utility">
+        <span class="entry-category">
+          {% assign category = page.categories | first %}
+          {% comment %}
+          TODO: LINK TO PAGE WITH POSTS BY CATEGORY
+          Published in <a href="/category/{{ category }}/" rel="category tag">{{ category | capitalize }}</a>
+          {% endcomment %}
+          Published in {{ category | capitalize }}
+        </span>
+        {% comment %} TODO: ADD TAGS
+        {% if page.tags %}
+        <span class="entry-tags">
+          {% capture tag_list %}
+            {% assign tagsize = page.tags.size %}
+            {% if tagsize != 0 %}
+              {% for tag in page.tags %}
+                <!-- TODO: add page of posts-per-tag and link -->
+                <a href="/tags/index.html#{{ tag | cgi_encode }}" data-toggle="tooltip" title="Posts tagged with {{ tag | strip }}" rel="tag">{{ tag | strip }}</a>{% unless forloop.last %}&comma;&nbsp;{% endunless %}
+              {% endfor %}
+            {% endif %}
+          {% endcapture %}
+          Tagged with {{ tag_list }}
+        </span>
+        {% endif %}
+        {% endcomment %}
+        <div class="author-card">
+          <img alt='' src='http://1.gravatar.com/avatar/{{ site.author.gravatar_hash }}?s=96&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/{{ site.author.gravatar_hash }}?s=192&amp;d=mm&amp;r=g 2x' class='avatar avatar-96 photo' height='96' width='96'/>
+          <h3 class="entry-author">
+            <span class="author vcard">
+              <a class="url fn n" href="/about" title="Posts by {{ site.author.name }}" rel="author">
+                {{ site.author.name }}
+              </a>
+            </span>
+          </h3>
+          <p>{{ site.author.descr }}</p>
+        </div>
+      </footer>
 
-<section class="content">
-<div class="when">
-  {{ page.date | date: "%B %d, %Y" }}
-</div>
-
-<h1>{{ page.title }}</h1>
-
-{{ content }}
-</section>
-
-<section class="comments">
-  <div class="sig"><span>Comments</span></div>
-  {% if site.comments %}
-  <div id="disqus_thread"></div>
-  <script type="text/javascript">
-      var disqus_shortname = '{{ site.disqus }}';
-      var disqus_identifier = '{{ page.id }}';
-      (function() {
-          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-      })();
-  </script>
-  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-  {% endif %}
-</section>
-
-<section class="meta">
-  <a class="block" href="https://twitter.com/{{ site.twitter }}">
-    <span class="ss-social-circle ss-twitter" />
-    <div>@{{ site.twitter }}</div>
-  </a>
-
-  <a class="block" href="https://github.com/{{ site.github }}">
-    <span class="ss-social-circle ss-octocat" />
-    <div>/{{ site.github }}</div>
-  </a>
-
-  <div style="clear: both"></div>
-</section>
+      <div id="respond" class="comment-respond">
+        <h3 id="reply-title" class="comment-reply-title">Leave a Reply</h3>
+        {% if site.comments %}
+        <!-- TODO: FIX THE COMMENTS -->
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+            var disqus_shortname = '{{ site.disqus }}';
+            var disqus_identifier = '{{ page.id }}';
+            (function() {
+                var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;
+                s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(s);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        {% endif %}
+      </div> 
+    </div>
+  </div>
+</article>

@@ -1,0 +1,49 @@
+---
+layout: base
+---
+<header class="page-header">
+  <div class="page-header-inner">
+    <h1 class="page-title">{{ site.title }}</h1>
+    <div class="archive-description">
+      <p>{{ site.description }}</p>
+    </div>
+  </div>
+</header>
+{% for post in site.posts %}
+{% if post.archive == null %}
+<article class="hentry" itemscope itemprop="blogPost" itemtype="http://schema.org/BlogPosting">
+  <div class="entry">
+    <header class="entry-header">
+      <h2 class="entry-title" itemprop="headline">
+        <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+      </h2>
+    </header>
+    <div class="entry-summary" itemprop="text">
+      {% if post.summary %}
+      <p>{{ post.summary }}</p>
+      {% else %}
+      <p>{{ post.content | strip_html | truncatewords:25 }}</p>
+      {% endif %}
+    </div>
+    <footer class="entry-meta">
+      <span class="entry-date">
+        <a href="{{ post.url }}">
+          <time class="published updated" datetime="{{ post.date | date_to_xmlschema }}">
+            {{ post.date | date: "%B %d, %Y" }}
+          </time>
+        </a>
+      </span>
+      {% if post.author %}
+      by <span class="entry-author">
+        <span class="author vcard">
+          <!-- TODO: link to page with posts by author (class="url fn n") -->
+          {{ post.author }}
+        </span>
+      </span>
+      {% endif %}
+    </footer>
+  </div>
+</article>
+{% endif %}
+{% endfor %}
+{{ content }}
