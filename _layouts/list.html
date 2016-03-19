@@ -3,10 +3,7 @@ layout: base
 ---
 <header class="page-header">
   <div class="page-header-inner">
-    <h1 class="page-title">{{ site.title }}</h1>
-    <div class="archive-description">
-      <p>{{ site.description }}</p>
-    </div>
+    {{ content }}
   </div>
 </header>
 {% for post in site.posts %}
@@ -46,4 +43,3 @@ layout: base
 </article>
 {% endif %}
 {% endfor %}
-{{ content }}
