@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Type-safe C bindings using ocaml-ctypes and stub generation
+title: 'Type-safe C bindings: Using ocaml-ctypes and stub generation'
 keywords: [ocaml, ocaml-ctypes, bindings, ffi, type-safe, flock, ocaml-flock]
-hero: /images/ctypes/mines.jpg
 image:
-  path: /images/ctypes/mines.jpg
+  path: /images/ctypes/maze.jpg
   credit: Kenners
   credit_link: https://www.flickr.com/photos/kenrickturner/11083895853
 ---
