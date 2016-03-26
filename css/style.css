@@ -3304,3 +3304,7 @@ a.comment-reply-link:hover {
 .site-header.is_stuck {
     position: absoulte !important
 }
+
+.highlighter-rouge {
+  margin-bottom: 20px;
+}
