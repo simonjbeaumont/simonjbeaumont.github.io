@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Automating Github Pages and Coveralls.io from Travis
+image:
+  path: /images/coverage-docgen/pulley.jpg
 ---
 
 With the advent of [Travis-ci][1] it has never been easier

@@ -1,6 +1,8 @@
 ---
 layout: post
-title: Some extra bells for Mutt's brilliant whistles
+title: "Some extra bells for Mutt's brilliant whistles"
+image:
+  path: /images/mutt-exchange/pug.jpg
 ---
 
 I lasted longer than I would expect, but my compliance budget finally ran out

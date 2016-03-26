@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Information Radiation with InfluxDB and Grafana
-hero: /images/information-radiator/hero.png
+image:
+  path: /images/information-radiator/lighthouse.jpg
 ---
 
 Like woolly socks for your brain, you almost feel warmer inside when you stare

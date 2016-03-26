@@ -1,6 +1,8 @@
 ---
 layout: post
 title: My day job just got open sourced
+image:
+  path: /images/open-xenserver/door.jpg
 ---
 
 I haven't really ever blogged about my work but that all might change beacause

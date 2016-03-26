@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Instrumenting XenServer for NVIDIA GRID (vGPU)
+image:
+  path: /images/xenserver-vgpu/engine.jpg
 ---
 
 Following the [recent announcement][1] of XenServer's upcoming virtual GPU
