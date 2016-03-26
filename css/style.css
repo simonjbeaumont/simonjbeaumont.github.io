@@ -406,10 +406,6 @@ img.aligncenter {
     position: absolute;
 }
 
-.admin-bar .site-header {
-    padding-top: 32px;
-}
-
 .navbar-position-left .site-header {
     right: auto;
     left: -280px;
@@ -2678,119 +2674,6 @@ footer.entry-meta {
     }
 }
 
-.sharedaddy {
-    text-align: center;
-}
-
-div.sharedaddy h3.sd-title {
-    display: block;
-    margin-bottom: 20px;
-    color: rgba(0, 0, 0, .6);
-    font-size: 30px;
-    font-size: 1.5rem;
-    line-height: 30px;
-}
-
-div.sharedaddy h3.sd-title:before {
-    content: none;
-}
-
-.sharedaddy:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.sd-content ul {
-    margin-bottom: 50px !important;
-}
-
-.sd-social-icon-text .sd-content ul li a.sd-button {
-    padding: 6px 15px 4px;
-    margin: 0 18px 18px 0;
-    background: transparent;
-    border: solid 1px rgba(0, 0, 0, 0.15);
-    border-radius: 19px;
-    box-shadow: none;
-    color: rgba(0, 0, 0, .6) !important;
-    font-family: inherit;
-    font-size: 14px;
-}
-
-.sd-social-icon-text .sd-content ul li a.sd-button:hover {
-    background: #fff;
-}
-
-.sd-social-icon .sd-content ul li[class*='share-'] a {
-    padding: 10px;
-    margin-left: 15px;
-    margin-right: 0;
-    border: solid 1px rgba(0, 0, 0, .15);
-    transition: border-color .25s ease;
-}
-
-@media (min-width: 414px) {
-    .sd-social-icon .sd-content ul li[class*='share-'] a {
-        margin-left: 22px;
-    }
-}
-
-.sd-social-icon .sd-content ul li[class*='share-']:first-child a {
-    margin-left: 0;
-}
-
-.sd-social-icon .sd-content ul li[class*='share-'] a:hover {
-    padding: 10px;
-    border: 1px solid #999;
-    opacity: 1;
-}
-
-.sd-social-icon .sd-content ul li[class*='share-'].share-facebook a.sd-button,
-.sd-social-icon .sd-content ul li[class*='share-'].share-twitter a.sd-button,
-.sd-social-icon .sd-content ul li[class*='share-'].share-google-plus-1 a.sd-button,
-.sd-social-icon .sd-content ul li[class*='share-'].share-pinterest a.sd-button,
-.sd-social-icon .sd-content ul li[class*='share-'].share-tumblr a.sd-button,
-.sd-social-icon-text .sd-content ul li a.sd-button {
-    background: #fff;
-    color: rgba(0, 0, 0, .6) !important;
-}
-
-.sd-social-icon-text .sd-content ul li a.sd-button {
-    font-family: "Fira Sans", sans-serif;
-    transition: border-color .25s ease;
-}
-
-.sd-social-icon-text .sd-content ul li a.sd-button:hover {
-    opacity: 1;
-}
-
-.sd-social-icon .sd-content ul li a.sd-button:before {
-    width: 16px;
-    text-align: center;
-}
-
-.sd-social-text .sd-content ul li a.sd-button span,
-.sd-content ul li a.sd-button>span,
-.sd-content ul li .option a.share-ustom span,
-.sd-content ul li.preview-item div.option.option-smart-off a span,
-.sd-content ul li.advanced a.share-more span,
-.sd-social-icon-text .sd-content ul li a.sd-button>span,
-.sd-social-official .sd-content>ul>li>a.sd-button span,
-.sd-social-official .sd-content>ul>li .digg_button >a span {
-    line-height: 26px;
-}
-
-.sd-social-icon-text .sd-content ul li a span,
-.sd-social-official .sd-content ul li a.sd-button span,
-.sd-content ul li.preview-item a.sd-button span {
-    margin-left: 6px;
-}
-
-.author-card {
-    max-width: 540px;
-    margin: 50px auto 10px;
-}
-
 .author-card .avatar {
     box-sizing: content-box;
     padding: 3px;
@@ -3166,19 +3049,6 @@ a.comment-reply-link:hover {
 .widget a:focus {
     color: #fff;
     opacity: 1;
-}
-
-.widget_calendar tr {
-    border-color: rgba(255, 255, 255, 0.1);
-}
-
-.widget_calendar a {
-    font-weight: 700;
-    text-decoration: none;
-}
-
-.widget_tag_cloud a {
-    text-decoration: none;
 }
 
 .sidebar-navbar {
