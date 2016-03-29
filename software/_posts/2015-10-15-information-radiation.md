@@ -1,6 +1,10 @@
 ---
 layout: post
 title: Information Radiation with InfluxDB and Grafana
+summary: >
+  Like woolly socks for your brain, learn how to build an dashboard to capture
+  and visualise the metrics you care about with InfluxDB and Grafana.
+keywords: [influxdb, grafana, information radiator, dashboard, agile]
 image:
   path: /images/information-radiator/lighthouse.jpg
 ---
