@@ -1,6 +1,7 @@
 ---
 layout: post
 title: My day job just got open sourced
+keywords: [open source, OSS, XenServer, citrix, xapi project, xen project, linux foundation]
 image:
   path: /images/open-xenserver/door.jpg
 ---

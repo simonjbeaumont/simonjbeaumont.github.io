@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Automating Github Pages and Coveralls.io from Travis
+keywords: [ocaml, travis, travis-ci, coveralls, coveralls.io, coverage, CI, continuous integration, github pages, gh-pages, automated, automation]
 image:
   path: /images/coverage-docgen/pulley.jpg
 ---

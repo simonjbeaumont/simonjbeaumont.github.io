@@ -1,9 +1,13 @@
 ---
 layout: post
 title: "Some extra bells for Mutt's brilliant whistles"
+keywords: [mutt, email, exchange, contacts, ldap, calendar, invites, tmux, notmuch]
 image:
   path: /images/mutt-exchange/pug.jpg
 ---
+* Searching (and tab-completion) of all email addresses (via `ldapsearch`)
+* Viewing Exchange calendar invitations
+* Showing unread email count in your `tmux` status line
 
 I lasted longer than I would expect, but my compliance budget finally ran out
 when it came to using Outlook for my work email. I've recently made the switch

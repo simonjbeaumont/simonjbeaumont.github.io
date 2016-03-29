@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Git Branch and Status in Bash prompt
-tags: [bash, git, prompt]
+keywords: [bash, git, prompt]
 ---
 Over these last few weeks I've really started getting into Git. Everyone has
 their favourite VCS but for me, what I've seen of Git so far makes me think

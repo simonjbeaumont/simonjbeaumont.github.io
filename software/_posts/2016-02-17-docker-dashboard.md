@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Wrangling Grafana and InfluxDB into a Docker image
-keywords: docker,grafana,influxdb,nginx,dashboard,container,cron,dashboard
+keywords: [docker, grafana, influxdb, nginx, dashboard, container, cron, dashboard]
 image:
   path: /images/docker-dashboard/cattle.jpg
   credit: Matt Northam
