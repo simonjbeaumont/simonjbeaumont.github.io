@@ -14,8 +14,11 @@
     {% endif %}
   {% endcapture %}
   {% capture h_description %}
-    {% if page.description %}{{ page.description }}
-    {% else %} {{ site.description }}
+    {% if page.summary %}{{ page.summary }}
+    {% else %}
+      {% if page.url == '/' %}{{ site.description }}
+      {% else %}{{ page.content | strip_html | truncatewords:25 }}
+      {% endif %}
     {% endif %}
   {% endcapture %}
   {% capture h_keywords %}
