@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Type-safe C bindings: Using ocaml-ctypes and stub generation'
+title: 'Type-safe C bindings #1: Using ocaml-ctypes and stub generation'
 keywords: [ocaml, ocaml-ctypes, bindings, ffi, type-safe, flock, ocaml-flock]
 image:
   path: /images/ctypes/maze.jpg

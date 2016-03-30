@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Type-safe C bindings: Handling flexible array members with ocaml-ctypes'
+title: 'Type-safe C bindings #2: Handling flexible array members with ocaml-ctypes'
 keywords: [ocaml, ocaml-ctypes, bindings, ffi, type-safe, array, flexible, sanlock, ocaml-sanlock]
 image:
   path: /images/ctypes-flexible-array/rope.jpg
