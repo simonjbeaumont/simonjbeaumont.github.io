@@ -20,13 +20,13 @@ The last of these did, however, cause a small headache. Like many C libraries,
 libsanlock makes use of **flexible array members**.
 
 ## What are flexible array members?
-The term _flexible member_ may counjour up any number of images for but here
-we're talking about a feature introduced in the C99 standard.
+The term _flexible member_ may counjour up any number of images but here we're
+talking about a feature introduced in the C99 standard.
 
 As of C99, it is possible to define a struct whose final member is an array
 without specifying its size. These can then be used to store an arbitrary
 amount of data as part of this struct when the required amound may only be
-determined at runtime. It is also possible to acheive this with the GCC
+determined at runtime. It is also possible to achieve this with the GCC
 compiler by declaring an [array of zero length][5].
 
 There is an example of such a struct in Sanlock library:
