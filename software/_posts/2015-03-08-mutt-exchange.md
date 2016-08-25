@@ -239,7 +239,7 @@ easier so this is no different. They're all in the `mutt/` directory of my
 [5]: https://github.com/simonjbeaumont/.dotfiles/blob/ce081a65/mutt/mailcap#L4
 [6]: https://github.com/simonjbeaumont/.dotfiles/blob/ce081a65/mutt/muttrc#L6
 [7]: https://github.com/simonjbeaumont/.dotfiles/blob/ce081a65/mutt/muttrc#L77-L78
-[8]: https://github.com/simonjbeaumont/.dotfiles/blob/ce081a65/mutt/dump-ical.py
+[8]: https://github.com/simonjbeaumont/.dotfiles/blob/0bea8cb5/mutt/dump-ical.py
 [9]: https://github.com/simonjbeaumont/.dotfiles/blob/ce081a65/tmux/tmux.conf#L132
 [10]: https://github.com/simonjbeaumont/.dotfiles/blob/ce081a65/tmux/new_mail.sh
 [11]: https://github.com/simonjbeaumont/.dotfiles
