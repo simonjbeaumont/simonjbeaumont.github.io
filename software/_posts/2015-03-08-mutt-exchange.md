@@ -232,6 +232,12 @@ I like to package up all my configuration so I can roll it out on a new box
 easier so this is no different. They're all in the `mutt/` directory of my
 [.dotfiles Github repo][11].
 
+## Update (2017)
+
+I've since made quite some changes to the scripts above. I have moved to
+`neomutt` and have reworked a lot of the LDAP scripts to be more extensible.
+All these are still available via the Github link above.
+
 [1]: http://stevelosh.com/blog/2012/10/the-homely-mutt/
 [2]: http://www.mutt.org/doc/manual/manual-4.html#ss4.5
 [3]: https://github.com/simonjbeaumont/.dotfiles/blob/ce081a65/mutt/pull-ldap.sh
