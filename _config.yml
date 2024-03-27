@@ -7,22 +7,21 @@ kramdown:
   input: GFM
   hard_wrap: false
 
-url: http://simonjbeaumont.com
+url: https://simonjbeaumont.com
 baseurl:
 
 title: Skylight Symmetry
 description: >
   Someone with nothing better to do writing for someone
-  with nothing better to read. On software, music and life.
-keywords: [beaumont, si, beaumont, blog, software, cambridge, ocaml, citrix]
+  with nothing better to read. On software, music, and life.
+keywords: [beaumont, si, blog, software, cambridge, ocaml, citrix, swift]
 author:
   name: Si Beaumont
   twitter: simonjbeaumont
   github: simonjbeaumont
   gravatar_hash: 879c21ada065dea971833062417b17cd
   descr: >-
-    Blackpool-born & Cambridge-based.
-    Full-time hacker & Part-time consumer of Dr. Pepper.
+    Full-time basher of keyboard; part-time consumer of beef jerky.
 disqus: skylightsymmetry
 
 featured_post: docker-dashboard
