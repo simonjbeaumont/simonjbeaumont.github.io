@@ -2,6 +2,7 @@
 layout: post
 title: Penultimate term review
 keywords: [compsci, student, computer science, cambridge]
+archive: true
 ---
 
 Well thus ends my final Michaelmas term. I think that in future years I may
