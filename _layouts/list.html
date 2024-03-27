@@ -7,12 +7,22 @@ layout: base
   </div>
 </header>
 {% for post in site.posts %}
-{% if post.archive == null %}
+{% if post.archive %}
+{% continue %}
+{% else %}
+
+{% if post.external %}
+{% assign url_to_use = post.external %}
+{% assign url_text_to_use = post.title | prepend: "🔗 " %}
+{% else %}
+{% assign url_to_use = post.url %}
+{% assign url_text_to_use = post.title %}
+{% endif %}
 <article class="hentry" itemscope itemprop="blogPost" itemtype="http://schema.org/BlogPosting">
   <div class="entry">
     <header class="entry-header">
       <h2 class="entry-title" itemprop="headline">
-        <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+        <a href="{{ url_to_use }}" title="{{ post.title }}">{{ url_text_to_use }}</a>
       </h2>
     </header>
     <div class="entry-summary" itemprop="text">
@@ -24,7 +34,7 @@ layout: base
     </div>
     <footer class="entry-meta">
       <span class="entry-date">
-        <a href="{{ post.url }}">
+        <a href="{{ url_to_use }}">
           <time class="published updated" datetime="{{ post.date | date_to_xmlschema }}">
             {{ post.date | date: "%B %d, %Y" }}
           </time>
@@ -35,6 +45,13 @@ layout: base
         <span class="author vcard">
           <!-- TODO: link to page with posts by author (class="url fn n") -->
           {{ post.author }}
+        </span>
+      </span>
+      {% endif %}
+      {% if post.external %}
+      on <span class="entry-author">
+        <span class="author vcard">
+          {{ url_to_use | split: "//" | last | split: "/" | first }}
         </span>
       </span>
       {% endif %}
