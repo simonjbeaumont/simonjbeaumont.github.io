@@ -209,13 +209,13 @@ from the ideal model in Ctypes too but hey, the rules were made to be broken!
 Also, Ctypes is very actively maintained and the small usuability niggle
 addressed in this post [has been noted][9].
 
-[0]: http://simonjbeaumont.com/posts/ocaml-ctypes
+[0]: https://simonjbeaumont.com/posts/ocaml-ctypes
 [1]: https://github.com/ocaml/ocaml-ctypes
 [2]: https://github.com/simonjbeaumont/ocaml-pci
 [3]: https://github.com/simonjbeaumont/ocaml-flock
 [4]: https://github.com/simonjbeaumont/ocaml-sanlock
 [5]: https://gcc.gnu.org/onlinedocs/gcc/Zero-Length.html
-[6]: http://ocamllabs.github.io/ocaml-ctypes/Ctypes_types.TYPE.html
-[7]: http://ocamllabs.github.io/ocaml-ctypes/PosixTypes.html
+[6]: https://ocamllabs.github.io/ocaml-ctypes/Ctypes_types.TYPE.html
+[7]: https://ocamllabs.github.io/ocaml-ctypes/PosixTypes.html
 [8]: https://github.com/ocamllabs/ocaml-ctypes/wiki/ctypes-tutorial#views
 [9]: https://github.com/ocamllabs/ocaml-ctypes/issues/353

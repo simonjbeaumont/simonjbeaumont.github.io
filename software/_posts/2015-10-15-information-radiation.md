@@ -169,9 +169,9 @@ And there you go... "Job's a good'n" as they say:
 ![end](/images/information-radiator/end.png)
 
 [1]: https://en.wikipedia.org/wiki/Trojan_Room_coffee_pot
-[2]: http://www.intel.co.uk/content/www/uk/en/nuc/overview.html
+[2]: https://www.intel.co.uk/content/www/uk/en/nuc/overview.html
 [3]: https://influxdb.com/
-[4]: http://grafana.org/
+[4]: https://grafana.org/
 [5]: https://github.com/simonjbeaumont/ring3-dash
 [6]: https://influxdb.com/download/index.html
 [7]: https://influxdb.com/docs/v0.9/introduction/getting_started.html

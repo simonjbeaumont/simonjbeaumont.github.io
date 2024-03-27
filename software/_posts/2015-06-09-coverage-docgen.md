@@ -224,8 +224,8 @@ Now for the quest to keep that coverage creeping up!
 [4]: https://github.com/simonjbeaumont/ocaml-pci/blob/9865f79/_oasis#L30-L35
 [5]: https//simonjbeaumont.github.io/ocaml-pci
 [6]: https://github.com/simonjbeaumont/ocaml-pci/tree/gh-pages
-[7]: http://docs.travis-ci.com/user/environment-variables/#Default-Environment-Variables
+[7]: https://docs.travis-ci.com/user/environment-variables/#Default-Environment-Variables
 [8]: https://github.com/simonjbeaumont/ocaml-pci/blob/9865f79/.docgen.sh
-[9]: http://bisect.x9c.fr/
+[9]: https://bisect.x9c.fr/
 [10]: https://github.com/sagotch/ocveralls
 [11]: https://github.com/simonjbeaumont/ocaml-pci/blob/9865f79/.coverage.sh

@@ -4,7 +4,7 @@ layout: post
 archive: true
 ---
 Having recently discovered **the awesome** [in-browser Javascript Linux
-kernel](http://bellard.org/jslinux/), I looked a bit further into the
+kernel](https://bellard.org/jslinux/), I looked a bit further into the
 work of Fabrice Bellard and unearthed this gem. I know this is a little old now
 but I think it's worth a mention.
 
@@ -27,8 +27,8 @@ g(29606852,1);for(a=0,p=t;p<t+N;)a+=*p<<(e&amp;1),*p++=a%10,a/=10;
 Turns out this guy is a bit of a machine --- here are some other projects that
 he has authored. They are a bit old now but certainly not dated:
 
-* [_Tiny CC_](http://bellard.org/tcc/): at just __100kB__ this C compiler
+* [_Tiny CC_](https://bellard.org/tcc/): at just __100kB__ this C compiler
   is even __9x faster__ than GCC
-* [_TCCBOOT_](http://bellard.org/tcc/tccboot.html): __138kB__ (uncompressed code)
+* [_TCCBOOT_](https://bellard.org/tcc/tccboot.html): __138kB__ (uncompressed code)
   capable of compiling and running a Linux kernel in __less than 15
   seconds__---probably even faster today!

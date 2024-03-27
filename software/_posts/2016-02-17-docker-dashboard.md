@@ -224,7 +224,7 @@ data container at any one time.
 <blockquote class="twitter-tweet" data-cards="hidden" data-lang="en"><p lang="en" dir="ltr">Check out how to build <a href="https://twitter.com/docker">@docker</a> images for Grafana &amp; InfluxDB over on <a href="https://twitter.com/simonjbeaumont">@simonjbeaumont</a>&#39;s blog: <a href="https://t.co/VzDQhEhnTM">https://t.co/VzDQhEhnTM</a> <a href="https://t.co/xMlwtTis7H">pic.twitter.com/xMlwtTis7H</a></p>&mdash; InfluxData (@InfluxDB) <a href="https://twitter.com/InfluxDB/status/700756754829672448">February 19, 2016</a></blockquote>
 
 [1]: /posts/information-radiation
-[2]: http://www.theregister.co.uk/2013/03/18/servers_pets_or_cattle_cern
+[2]: https://www.theregister.co.uk/2013/03/18/servers_pets_or_cattle_cern
 [3]: https://docker.com
 [4]: https://github.com/simonjbeaumont/docker-xs-dev-dash
 [5]: https://docs.docker.com/engine/userguide/containers/dockervolumes/#creating-and-mounting-a-data-volume-container
@@ -233,5 +233,5 @@ data container at any one time.
 [8]: https://github.com/simonjbeaumont/docker-xs-dev-dash/blob/master/supervisord.conf
 [9]: https://docs.docker.com/engine/userguide/eng-image/dockerfile_best-practices#build-cache
 [10]: https://github.com/simonjbeaumont/docker-xs-dev-dash/blob/master/Makefile
-[11]: http://www.slideshare.net/gmccance/cern-data-centre-evolution
+[11]: https://www.slideshare.net/gmccance/cern-data-centre-evolution
 [12]: https://www.flickr.com/photos/scpgt/3547880567

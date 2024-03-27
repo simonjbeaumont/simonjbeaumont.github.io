@@ -260,8 +260,8 @@ Now, the purist in you might always want to reimplement the functionality
 natively in OCaml, but **when you just can't be arsed**, go forth and bind with
 confidence!
 
-[0]: http://caml.inria.fr/pub/docs/manual-ocaml-4.00/manual033.html
+[0]: https://caml.inria.fr/pub/docs/manual-ocaml-4.00/manual033.html
 [1]: https://github.com/ocamllabs/ocaml-ctypes
-[3]: http://linux.die.net/man/2/flock
+[3]: https://linux.die.net/man/2/flock
 [4]: https://github.com/janestreet/core/blob/master/src/unix_stubs.c#L489-L534
 [5]: https://github.com/simonjbeaumont/ocaml-flock

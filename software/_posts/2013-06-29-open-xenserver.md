@@ -86,10 +86,10 @@ development:
 So do me out of a job, learn some OCaml and write some code for the XenServer
 project.
 
-[citrix-announcement]: http://www.citrix.com/news/announcements/jun-2013/citrix-launches-open-source-xenserver.html
-[xen-project]: http://www.xen.org
-[xen-api]: http://github.com/xapi-project/xen-api
-[xencenter]: http://github.com/xenserver/xenadmin
-[xenserver-github]: http://github.com/xenserver/
-[xenserver.org]: http://xenserver.org
+[citrix-announcement]: https://www.citrix.com/news/announcements/jun-2013/citrix-launches-open-source-xenserver.html
+[xen-project]: https://www.xen.org
+[xen-api]: https://github.com/xapi-project/xen-api
+[xencenter]: https://github.com/xenserver/xenadmin
+[xenserver-github]: https://github.com/xenserver/
+[xenserver.org]: https://xenserver.org
 [mailing-list]: mailto:xs-devel@lists.xenserver.org

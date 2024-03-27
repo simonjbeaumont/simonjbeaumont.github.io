@@ -4,8 +4,6 @@ title: The birth of a DIY guitar FX pedal
 tags: [guitar, FX pedal, project]
 ---
 
-![](http://cl.ly/image/0L1L2R3y310c/content)
-
 So I recently decided I'd try my hand at building my own guitar pedal. It went
 pretty well and I'm really impressed with it. It really is as amazing-sounding
 and versatile as they claim. Flippin' amazing!
@@ -15,13 +13,13 @@ but has incorporated <strike>many</strike> tons of the mods that people made to
 them back in the day. 
 
 For those interested in how it sounds. Check out <a target="_blank"
-href="http://www.youtube.com/watch?v=37RfgSdn53w">this youtube review</a> by <a
-target="_blank" href="http://www.gearmanndude.com/">Gearmanndude</a> (is it
+href="https://www.youtube.com/watch?v=37RfgSdn53w">this youtube review</a> by <a
+target="_blank" href="https://www.gearmanndude.com/">Gearmanndude</a> (is it
 Jack Black? --- who knows?!)...
 
 For those of you who don't care too much for sound but can't resist a
 good ol' DIY project and want to buy one and have a crack at it check the <a
-target="_blank" href="http://www.buildyourownclone.com/overdrive2.html">BYOC
+target="_blank" href="https://www.buildyourownclone.com/overdrive2.html">BYOC
 website</a>.
 
 There are a few things I __love__ about this pedal. It's just so darn
@@ -51,27 +49,27 @@ circuit
 
 Ah yes, every project must start with the standard stock-check!
 
-<img src="http://media.tumblr.com/tumblr_lib7n0C2yB1qggkk1.jpg" width="260"
+<img src="https://media.tumblr.com/tumblr_lib7n0C2yB1qggkk1.jpg" width="260"
 height="196" class="automargin" />
 
 ### Trimester #1 --- PCB population
 
-<img class="automargin" src="http://media.tumblr.com/tumblr_lib8fiOYrt1qggkk1.jpg" />
-<img class="automargin" src="http://media.tumblr.com/tumblr_lib8fmpb2v1qggkk1.jpg" />
-<img class="automargin" src="http://media.tumblr.com/tumblr_lib8frOQDR1qggkk1.jpg" />
-<img class="automargin" src="http://media.tumblr.com/tumblr_lib8fxfK8Q1qggkk1.jpg" />
-<img class="automargin" src="http://media.tumblr.com/tumblr_lib8gauUu71qggkk1.jpg" />
-<img class="automargin" src="http://media.tumblr.com/tumblr_lib8ghIGuT1qggkk1.jpg" />
+<img class="automargin" src="https://media.tumblr.com/tumblr_lib8fiOYrt1qggkk1.jpg" />
+<img class="automargin" src="https://media.tumblr.com/tumblr_lib8fmpb2v1qggkk1.jpg" />
+<img class="automargin" src="https://media.tumblr.com/tumblr_lib8frOQDR1qggkk1.jpg" />
+<img class="automargin" src="https://media.tumblr.com/tumblr_lib8fxfK8Q1qggkk1.jpg" />
+<img class="automargin" src="https://media.tumblr.com/tumblr_lib8gauUu71qggkk1.jpg" />
+<img class="automargin" src="https://media.tumblr.com/tumblr_lib8ghIGuT1qggkk1.jpg" />
 
 ### Trimester #2 --- Enclosure mounting and 3PDT wiring
 
-<img class="automargin" src="http://media.tumblr.com/tumblr_lib8go27sS1qggkk1.jpg" />
-<img class="automargin" src="http://media.tumblr.com/tumblr_lib8gycSCB1qggkk1.jpg" />
+<img class="automargin" src="https://media.tumblr.com/tumblr_lib8go27sS1qggkk1.jpg" />
+<img class="automargin" src="https://media.tumblr.com/tumblr_lib8gycSCB1qggkk1.jpg" />
 
 ### Trimester #3  --- It comes alive.... mwahahahaa
 
-<img class="automargin" src="http://media.tumblr.com/tumblr_lib8h39kgA1qggkk1.jpg" />
-<img class="automargin" src="http://media.tumblr.com/tumblr_lib8h71gqo1qggkk1.jpg" />
+<img class="automargin" src="https://media.tumblr.com/tumblr_lib8h39kgA1qggkk1.jpg" />
+<img class="automargin" src="https://media.tumblr.com/tumblr_lib8h71gqo1qggkk1.jpg" />
 
 ## Conclusions
 

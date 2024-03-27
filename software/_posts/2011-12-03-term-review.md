@@ -17,7 +17,7 @@ just a little too ivory-tower for my liking—Although I did quite quite enjoy
 all the lovely greek that came with the polymorphic lambda calculus in this
 term's _Type Theory_ course:
 
-![type-derivation](http://static.tumblr.com/tsta8sv/p6Glvn3xm/types.png)
+![type-derivation](https://static.tumblr.com/tsta8sv/p6Glvn3xm/types.png)
 
 So, on the subject of jobs. It really has come to that point. The point where,
 as a soon-to-be-graduate, I hope and pray that my hard work and well-earned

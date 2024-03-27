@@ -63,7 +63,7 @@
   {% endif %}
 
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }} &raquo; Feed" href="feed.xml"/>
-  <link rel='stylesheet' id='enlightenment-web-fonts-css' href='http://fonts.googleapis.com/css?family=PT+Serif:400,italic,700,700italic%7CMontserrat:700%7CNeuton:400,italic,700italic,800%7CPlayfair+Display&#038;subset=latin' type='text/css' media='all'/>
+  <link rel='stylesheet' id='enlightenment-web-fonts-css' href='https://fonts.googleapis.com/css?family=PT+Serif:400,italic,700,700italic%7CMontserrat:700%7CNeuton:400,italic,700italic,800%7CPlayfair+Display&#038;subset=latin' type='text/css' media='all'/>
   <link rel='stylesheet' href='https://code.cdn.mozilla.net/fonts/fira.css' type='text/css' media='all' />
   <link rel="stylesheet" href="/assets/fonts/ss-social/ss-social.css" type="text/css" media='all' />
   <link rel='stylesheet' href='/assets/css/bootstrap.min.css' type='text/css' media='all'/>
@@ -97,14 +97,14 @@
   {% else %} UNKNOWN
   {% endcase %}
 {% endcapture %}
-<body class="{{ body_class }} layout-{{ page.layout }} navbar-position-right header-position-left custom-header custom-background" itemscope itemtype="http://schema.org/WebPage">
+<body class="{{ body_class }} layout-{{ page.layout }} navbar-position-right header-position-left custom-header custom-background" itemscope itemtype="https://schema.org/WebPage">
   <a class="skip-link screen-reader-text sr-only sr-only-focusable" href="#content" title="Skip to content">
     Skip to content
   </a>
   <div id="page" class="site">
   <header id="masthead" class="site-header navbar navbar-static-top navbar-inverse" role="banner">
   <div class="container-fluid">
-    <div class="branding navbar-header" itemscope itemtype="http://schema.org/WPHeader">
+    <div class="branding navbar-header" itemscope itemtype="https://schema.org/WPHeader">
       <button class="navicon navbar-toggle navbar-toggle" id="navbar-toggle" type="button">
         <span class="navbar-toggle-text screen-reader-text sr-only">Menu</span><span class="glyphicon glyphicon-th"></span>
         <span class="glyphicon glyphicon-chevron-left"></span>
@@ -114,7 +114,7 @@
         {{ site.description }}
       </div>
     </div>
-    <nav id="site-navigation" class="menu-container" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+    <nav id="site-navigation" class="menu-container" role="navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
       <h2 class="screen-reader-text sr-only">Menu</h2>
         <ul id="menu-primary-menu" class="menu nav navbar-nav navbar-rightmenu nav navbar-nav">
           <li id="menu-item-home" class="menu-item menu-item-has-icon" itemprop="name"><a href="/" itemprop="url"><span class="glyphicon glyphicon-home"></span> Home<br/><span class="menu-item-description">My Blog’s Home Page</span></a></li>
@@ -131,7 +131,7 @@
       </ul>
     </nav>
     {% comment %}
-    <div id="secondary" class="widget-area sidebar sidebar-primary" role="complementary" itemscope itemtype="http://schema.org/WPSideBar">
+    <div id="secondary" class="widget-area sidebar sidebar-primary" role="complementary" itemscope itemtype="https://schema.org/WPSideBar">
       <aside id="search-2" class="widget widget_search">
         <form class="form-search" id="searchform" action="index.html" role="search">
           <label for="s" class="screen-reader-text sr-only">Search for:</label>
@@ -154,7 +154,7 @@
       {{ content }}
     </main>
   </div>
-  <footer id="colophon" class="site-footer" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
+  <footer id="colophon" class="site-footer" role="contentinfo" itemscope itemtype="https://schema.org/WPFooter">
     <div class="container-fluid">
       <div class="copyright">
         <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}</p>

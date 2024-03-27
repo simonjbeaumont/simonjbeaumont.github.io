@@ -238,8 +238,8 @@ I've since made quite some changes to the scripts above. I have moved to
 `neomutt` and have reworked a lot of the LDAP scripts to be more extensible.
 All these are still available via the Github link above.
 
-[1]: http://stevelosh.com/blog/2012/10/the-homely-mutt/
-[2]: http://www.mutt.org/doc/manual/manual-4.html#ss4.5
+[1]: https://stevelosh.com/blog/2012/10/the-homely-mutt/
+[2]: https://www.mutt.org/doc/manual/manual-4.html#ss4.5
 [3]: https://github.com/simonjbeaumont/.dotfiles/blob/ce081a65/mutt/pull-ldap.sh
 [4]: https://github.com/simonjbeaumont/.dotfiles/blob/ce081a65/mutt/crontab-entries#L5-L6
 [5]: https://github.com/simonjbeaumont/.dotfiles/blob/ce081a65/mutt/mailcap#L4

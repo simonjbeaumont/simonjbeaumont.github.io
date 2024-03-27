@@ -11,7 +11,7 @@ So if you love Git then maybe you'll appreciate this. A bit of Googling and I
 stumbled upon a way to have your Bash PS1 prompt tell you what branch of a
 repository you're on (if applicable) and give a dirty flag as well...
 
-![](http://static.tumblr.com/tsta8sv/kbJlr585o/gitps1.png "Git in Bash PS1")
+![](https://static.tumblr.com/tsta8sv/kbJlr585o/gitps1.png "Git in Bash PS1")
 
 It involves a couple of functions in your `.bashrc` and here they are:
 
