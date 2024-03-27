@@ -22,7 +22,12 @@ layout: base
   <div class="entry">
     <header class="entry-header">
       <h2 class="entry-title" itemprop="headline">
-        <a href="{{ url_to_use }}" title="{{ post.title }}">{{ url_text_to_use }}</a>
+        <a href="{{ url_to_use }}" title="{{ post.title }}">
+          {% if post.external %}
+          <span class="glyphicon glyphicon-link"></span>
+          {% endif %}
+          {{ post.title }}
+        </a>
       </h2>
     </header>
     <div class="entry-summary" itemprop="text">
