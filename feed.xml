@@ -10,14 +10,11 @@ layout: null
     {% for post in site.posts %}
       {% unless post.link %}
       <item>
-        <title>{{ post.title | xml_escape }}</title>
-        {% comment %}
-        {% if post.excerpt %}
-          <description>{{ post.excerpt | xml_escape }}</description>
+        {% if post.external %}
+        <title>{{ post.title | xml_escape }} 🔗</title>
         {% else %}
-          <description>{{ post.content | xml_escape }}</description>
+        <title>{{ post.title | xml_escape }}</title>
         {% endif %}
-        {% endcomment %}
         <description>{{ post.content | xml_escape }}</description>
         <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
         <link>
